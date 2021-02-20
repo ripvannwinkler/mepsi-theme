@@ -30,7 +30,7 @@ class Bootstrap
     
     protected function include_widget_files()
     {
-        require_once(__DIR__ . "/rainbowDivider.php");
+        require_once(__DIR__ . "/RainbowDivider.php");
     }
 
     public function register_categories($elements_manager)
@@ -52,7 +52,7 @@ class Bootstrap
 
     public function register_scripts()
     {
-        wp_register_style('rainbow-divider', get_stylesheet_directory_uri() . '/lib/widgets/rainbowDivider.css');
+        wp_register_style('rainbow-divider', get_stylesheet_directory_uri() . '/lib/widgets/RainbowDivider.css');
     }
 }
 
