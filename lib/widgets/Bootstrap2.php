@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Widgets_Bootstrap
+class Bootstrap
 {
     protected static $instance = null;
 
@@ -24,7 +24,7 @@ class Widgets_Bootstrap
     protected function __construct()
     {
         add_action('elementor/widgets/widgets_registered', [$this, 'register_widgets']);
-        add_action('elementor/elements/categories_registered', [$this, 'add_elementor_widget_categories']);
+        add_action('elementor/elements/categories_registered', [$this, 'register_categories']);
         add_action('elementor/frontend/after_register_scripts', [ $this, 'register_scripts' ]);
     }
     
@@ -33,7 +33,7 @@ class Widgets_Bootstrap
         require_once(__DIR__ . "/rainbowDivider.php");
     }
 
-    public function add_elementor_widget_categories($elements_manager)
+    public function register_categories($elements_manager)
     {
         $elements_manager->add_category(
             'mepsi',
@@ -56,4 +56,4 @@ class Widgets_Bootstrap
     }
 }
 
-Widgets_Bootstrap::get_instance();
+Bootstrap::get_instance();

@@ -43,7 +43,7 @@ class RainbowDivider extends Widget_Base
         $this->start_controls_section(
             'settings_section',
             [
-                'label' => __('Settings', 'rainbow-divider'),
+                'label' => __('Settings', 'mepsi'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -51,7 +51,7 @@ class RainbowDivider extends Widget_Base
         $this->add_responsive_control(
             'width',
             [
-                'label' => __('Divider Width', 'rainbow-divider'),
+                'label' => __('Divider Width', 'mepsi'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 100,
@@ -89,20 +89,20 @@ class RainbowDivider extends Widget_Base
         $this->add_responsive_control(
             'content_align',
             [
-                'label' => __('Alignment', 'plugin-name'),
+                'label' => __('Alignment', 'mepsi'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'default' => 'center',
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'plugin-name'),
+                        'title' => __('Left', 'mepsi'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'plugin-name'),
+                        'title' => __('Center', 'mepsi'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'plugin-name'),
+                        'title' => __('Right', 'mepsi'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
